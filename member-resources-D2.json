@@ -133,7 +133,7 @@
     },
     {
       "type": "Microsoft.Compute/virtualMachines/extensions",
-      "name": "[concat('vmMember', parameters('machineSettings').machineIndex, '/installmongodb')]",
+      "name": "[concat('sntd01mgdb', parameters('machineSettings').machineIndex, '/installmongodb')]",
       "apiVersion": "2015-05-01-preview",
       "location": "[resourceGroup().location]",
       "dependsOn": [
