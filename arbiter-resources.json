@@ -50,7 +50,7 @@
     },
     {
       "type": "Microsoft.Compute/virtualMachines",
-      "name": "vmArbiter",
+      "name": "sntd01mgdbarb",
       "apiVersion": "2015-05-01-preview",
       "location": "[resourceGroup().location]",
       "dependsOn": [
