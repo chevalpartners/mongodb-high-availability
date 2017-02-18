@@ -287,10 +287,9 @@ systemLog:
     quiet: true
     logAppend: true
 processManagement:
-    fork: true
+    fork: false
     pidFilePath: "/var/run/mongodb/mongod.pid"
 net:
-    bindIp: 0.0.0.0
     port: $MONGODB_PORT
 security:
     #keyFile: ""
