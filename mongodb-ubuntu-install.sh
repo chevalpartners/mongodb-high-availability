@@ -234,9 +234,9 @@ configure_replicaset()
 	
 		# Initiate a replica set
 		mongo master -u $ADMIN_USER_NAME -p $ADMIN_USER_PASSWORD --host 127.0.0.1 --eval "printjson(rs.initiate())"
-		
+		loop=$INSTANCE_COUNT-1
 		# Add all members except this node as it will be included into the replica set after the above command completes
-		for (( n=0 ; n<($INSTANCE_COUNT-1) ; n++)) 
+		for (( n=0 ; n<$loop ; n++ ))
 		do 
 			MEMBER_HOST="${NODE_IP_PREFIX}${n}:${MONGODB_PORT}"
 			
