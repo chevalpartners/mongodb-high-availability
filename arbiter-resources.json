@@ -87,7 +87,7 @@
     },
     {
       "type": "Microsoft.Compute/virtualMachines/extensions",
-      "name": "vmArbiter/installmongodb",
+      "name": "sntd01mgdbarb/installmongodb",
       "apiVersion": "2015-05-01-preview",
       "location": "[resourceGroup().location]",
       "dependsOn": [
